@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="convertValueInSourceUnitToValueInTargetUnits.js"></script>
+  </head>
+  <body>
+    <h1>Convert Units</h1>
+    <form id='input_value_to_convert_form' >
+      <label name="input_value_to_convert">value: </label>
+      <input type="text" id="input_value_to_convert" name="input_value_to_convert">
+      <br>
+      <label for="input_unit">input unit:</label>
+      
+      <select name="units" id="input_unit">
+	<option value="meter">meter</option>
+	<option value="foot">foot</option>
+	<option value="yard">yard</option>
+	<option value="inch">inch</option>
+	<option value="millimeter">millimeter</option>
+      </select>
+      <br>
+      <input type=submit value='Update table'>
+    </form>
+    
+    <table>
+      <thead>
+	<tr>  
+      	  <td>Unit</td>
+	  <td>Value</td>
+    	</tr>
+      </thead>
+      <tbody>
+	<tr>
+	  <td>meter</td>
+      	  <td id='output_table_cell_meter'></td>
+    	</tr>
+	<tr>
+	  <td>foot</td>
+      	  <td id='output_table_cell_foot'></td>
+    	</tr>
+	<tr>
+	  <td>yard</td>
+      	  <td id='output_table_cell_yard'></td>
+    	</tr>
+	<tr>
+	  <td>inch</td>
+      	  <td id='output_table_cell_inch'></td>
+    	</tr>
+	<tr>
+	  <td>millimeter</td>
+      	  <td id='output_table_cell_millimeter'></td>
+    	</tr>
+      </tbody>
+    </table>
+  </body>
+</html>
